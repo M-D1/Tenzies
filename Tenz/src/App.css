@@ -1,0 +1,171 @@
+body {
+  background: #520000;
+  padding: 4em;
+  box-sizing: border-box;
+  color: white;
+ 
+
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.introduction button {
+  background: #a40000
+}
+
+
+
+button {
+  padding: 0.3125em 1.3125em;
+  font-size: 1.4em;
+  margin-top: 1.2em;
+  background: #520000;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  box-shadow: inset 5px 7px 50px #991717;
+}
+
+button:hover {
+  background: #c86666;
+}
+
+.btn:hover {
+  background: #831313;
+
+
+}
+
+.content {
+  
+  background: #991717;
+  height: 380px;
+  width: 420px;
+  padding: 2.2em;
+  border-radius: 10px;
+}
+
+.title {
+  margin: 0;
+  font-size: 2.4em;
+
+}
+
+.desc {
+  margin-bottom: 0;
+  font-size: 1.2em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 80px);
+  gap: 10px;
+}
+
+.dice {
+
+  text-align: center;
+  border-radius: 10px;
+  max-width: 60px;
+  color: #a40000;
+  padding: .2em;
+  transform: scale(1);
+  transition: scale 550ms;
+  margin-top: 1em;
+
+
+
+}
+
+.dice:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+
+
+
+@media(max-width:504px) {
+  .content {
+    
+    margin: 2em;
+    height: 400px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(5, 40px);
+    gap: 30px;
+
+  }
+}
+
+@media(max-width:400px) {
+
+  .content {
+
+    margin: 2em;
+    height: 374px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(5, 50px);
+    gap: 9px;
+  }
+}
+
+@media(max-width:328px) {
+  .content {
+    padding: 2em;
+    margin: 1em;
+    height: 400px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(5, 15px);
+
+    justify-items: center;
+    gap: 43px;
+
+  }
+}
+
+
+@media(max-width:314px) {
+  .content {
+    padding: 2em;
+    margin: 1em;
+    height: 400px;
+  }
+
+  .grid {
+
+    grid-template-columns: repeat(5, 9px);
+
+    justify-items: center;
+    gap: 44px;
+
+  }
+}
